@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+  </head>
+  <body onload="init(); SetTime(); SetDate();sum();">
+    <div id="img-converter">
+        <form onsubmit="event.preventDefault();" id="form">
+          <div class="upper">
+           <label for="date">Select Date</label>
+           <input type="date" class="me-5" class="sdate"  id="date">
+           <button class="me-5" href= "#">load</button>
+           <button class="me-5" id="png" onclick="download();">Export Timesheet as PNG</button>
+          </div>
+          <div class="upper-border"></div>
+          <div class="lower">
+              <label for="stime ">Start-Time</label>
+              <input type="time"  class="me-5" name="stime" id="stime" placeholder="Start-Time">
+              <label for="etime">End-Time</label>
+              <input type="time" class="me-5" name="etime" id="etime" placeholder="End-Time">
+              <input type="text" class="me-5" name ="task" id = "task" placeholder="Task-Description">
+              <button onclick="OnSubmit();" id="submit">Add</button>
+              <button onclick="OnClear();" id="clear">clear</button>
+          </div>
+          <div class="upper-border"></div>
+        </form>
+          <table class="list mt-5" id="show" border="1">
+            <thead class="text-center">
+                <tr>
+                    <th>Start Date</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Task Description</th>
+                    <th>Hours:Minutes</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="list">
+            </tbody>
+        
+        </table>
+        <strong class="total-time">Total Time:<output id="total"></output></strong>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html> 

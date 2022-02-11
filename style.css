@@ -1,0 +1,165 @@
+body {
+    margin-top: 10px;
+    margin-right:100px;
+    background-color: white;
+    border-top: 1px solid ;
+    border-right: grey 1px solid;
+    border-bottom: grey 1px solid;  
+    font-weight: none;
+    height: 100%;
+   
+}
+
+form {
+    margin-top: 15px;
+    margin-left: 300px;
+}
+.upper {
+    margin-top: 1px;
+    margin-left: 100px;
+    
+}
+.upper-border {
+    width: 85%;
+    border-bottom: 1px solid;
+    margin-top: 15px;
+}
+.lower{
+    padding: 1px;
+    margin-top: 10px;
+}
+label{
+    margin-right: 5px;
+}
+input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	font-family: inherit;
+	font-size: 12px;
+	padding: 5px;
+	width: 15%;
+}
+ #task{
+    width: 25%;
+}
+table{
+    margin-left: 300px;
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 65%;
+}
+thead{
+    padding: 10px;
+    margin: 5px;
+}
+th{
+    padding: 10px;
+}   
+button{
+	background-color: white;
+	padding: 8px;
+	border: 1px solid;
+	border-radius: .25rem;
+	color: rgb(14, 13, 13);
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+    position: relative;
+}
+.total-time{
+    margin-left: 300px;
+    margin-top: 110px;
+}
+tbody {
+    text-align: center;
+    border: 1px solid grey;
+}
+.btn {
+    display: inline;
+    position: relative;
+}
+@media(max-width: 1199px) {}   
+@media(max-width: 991px) {
+    body {
+        margin-top: 50px;
+        margin-right:40px;
+     
+       
+    }
+    form {
+        margin-left: 150px;
+    }
+    .upper {
+        margin-top: 1px;
+        margin-left: 80px;
+        
+    }
+    table{
+        margin-left: 150px;
+        width: 70%;
+    }
+    tbody {
+        padding: 15px;
+    }
+    .total-time{
+        margin-left: 150px;
+    }
+}
+@media(max-width: 880px) {
+    table{
+        margin-left: 100px;
+        width: 75%;
+    }
+    .lower{
+        width: 100%;
+    }
+    form{
+        margin-left: 100px;
+    }
+    .total-time{
+        margin-left: 100px;
+    }
+}
+@media(max-width: 771px) {
+    body {
+        margin-top: 20px;
+        margin-right:10px;  
+    }
+    form{
+        margin-left: 50px;
+    }
+    table{
+        margin-left: 50px;
+        width: 85%;
+    }
+    .lower{
+        width: 100%;
+    }
+    .total-time{
+        margin-left: 50px;
+    }
+}
+@media(max-width: 630px) {
+    form{
+        margin-left: 0px;
+    }
+    table{
+        margin-left: 0px;
+        width: 85%;
+    }
+    .total-time{
+        margin-left: 0px;
+    }
+}
+@media(max-width: 500px) {
+    body{
+        border: none;
+    }
+    .upper-border{
+        width: 100%;
+    }
+    table{
+        margin-left: 0px;
+        width: 75%;
+    }
+}
